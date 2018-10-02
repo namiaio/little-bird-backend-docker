@@ -1,1 +1,1 @@
-Dockerfile for Node.js projects.
+Dockerfile containing Puppeteer for Node.js projects.
