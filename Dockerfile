@@ -20,7 +20,7 @@ ADD package.json package-lock.json /
 
 RUN npm i && npm i -g yarn cross-env jest
 
-ENV  PATH="${PATH}:/node_modules/.bin"
+ENV PATH="${PATH}:/node_modules/.bin"
 
 # Versions of local tools
 RUN echo "node: $(node -v)"; \
