@@ -15,7 +15,7 @@ RUN  apt-get update \
      && rm -rf /var/lib/apt/lists/* \
      && curl https://cli-assets.heroku.com/install.sh | sh 
 
-# Add package.sjon with Puppeteer under /node_modules so it's available system-wide
+# Add package.json with Puppeteer under /node_modules so it's available system-wide
 ADD package.json package-lock.json /
 
 # Install Puppeteer and other Little Bird Backend deps
