@@ -21,6 +21,9 @@ ADD package.json package-lock.json /
 # Install Puppeteer and other Little Bird Backend deps
 RUN npm i && npm i -g yarn cross-env jest
 
+# Install sentry-cli
+RUN curl -sL https://sentry.io/get-cli/ | bash
+
 ENV PATH="${PATH}:/node_modules/.bin"
 
 # Versions of local tools
